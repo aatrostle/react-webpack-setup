@@ -16,5 +16,8 @@
     "url": "https://github.com/aatrostle/react-webpack-setup/issues"
   },
   "homepage": "https://github.com/aatrostle/react-webpack-setup#readme",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "webpack": "^1.12.2"
+  }
 }
