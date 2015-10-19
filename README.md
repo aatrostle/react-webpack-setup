@@ -14,7 +14,8 @@ I took notes on an article I read regarding getting setup with react and webpack
 - `npm install webpack --save-dev`
 - `vim webpack.config.js`
 
-``` webpack.config.js
+``` javascript
+// webpack.config.js
 module.exports = {
   context: __dirname + "/app",
   entry: "./app.js",
@@ -29,7 +30,8 @@ module.exports = {
 - `mkdir app`
 - `vim app/app.js`
 
-``` app/app.js
+``` javascript
+// app/app.js
 console.log('webpack setup!');
 ```
 - `webpack`
@@ -40,7 +42,8 @@ console.log('webpack setup!');
 - `npm install babel-loader --save-dev`
 - `vim webpack.config.js`
 
-``` add module object
+``` javascript
+// webpack.config.js
 module.exports = {
   module: {
     loaders: [
@@ -83,7 +86,8 @@ export default React.createClass({
 
 - `vim app/app.js`
 
-``` updating app/app.js
+``` javascript
+// updating app/app.js
 import React from "react";
 import Greeting from "./greeting";
 
@@ -97,7 +101,8 @@ React.render(
 
 - `vim app/index.html`
 
-``` app/index.html
+``` html
+<!-- app/index.html -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -114,7 +119,8 @@ React.render(
 - `npm install file-loader --save-dev`
 - `vim webpack.config.js`
 
-``` addmend to exports object
+``` javascript
+// webpack.config.js
 module.exports = {
   entry: {
     javascript: "./app.js",
@@ -123,7 +129,8 @@ module.exports = {
 }
 ```
 
-``` add after first file loader object in webpack.config.js
+``` javascript
+// webpack.config.js
 module.exports = {
   module: {
     loaders: [
@@ -136,6 +143,7 @@ module.exports = {
   },
 }
 ```
+
 - `webpack`
 - view `dist/index.html` (browser)
 
@@ -152,7 +160,8 @@ module.exports = {
 - `npm install react-hot-loader --save-dev`
 - `vim webpack.config.js`
 
-``` add to first loaders object
+``` javascript
+// webpack.config.js
 module.exports = {
   module: {
     loaders: [
@@ -174,7 +183,8 @@ module.exports = {
 
 - `vim package.json`
 
-``` add under scripts object
+``` javascript
+// package.json
 "scripts": {
   "start": "webpack-dev-server --hot --inline"
 },
