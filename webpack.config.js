@@ -1,5 +1,7 @@
 module.exports = {
   context: __dirname + '/app',
+  // devtool: 'source-map',
+  devtool: "#inline-source-map",
 
   entry: {
     javascript: "./app.js",

@@ -1,7 +1,10 @@
 import React from "react";
-import Greeting from "./greeting";
+import ReactDOM from "react-dom";
+import RootApp from "./root-app";
 
-React.render(
-  <Greeting name="Seattle"/>,
-  document.body
+ReactDOM.render(
+  <RootApp/>,
+  document.getElementById('app')
 );
+
+// document.addEventListener("DOMContentLoaded", function() {
