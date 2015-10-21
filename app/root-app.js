@@ -1,4 +1,5 @@
 import Nav from "./nav";
+import SignIn from "./signin";
 import React from "react";
 
 export default React.createClass({
@@ -13,6 +14,7 @@ export default React.createClass({
     return (
       <div className="root">
         <Nav {...this.state} />
+        <SignIn />
       </div>
     );
   },
