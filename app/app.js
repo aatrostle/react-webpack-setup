@@ -7,4 +7,10 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
-// document.addEventListener("DOMContentLoaded", function() {
+function init() {
+  console.log("init");
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+  init();
+});
